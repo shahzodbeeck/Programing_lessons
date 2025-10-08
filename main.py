@@ -43,7 +43,7 @@ def firstTask():
 
 def secondTask():
     regions = ["Andijan", "Samarkand", "Bukhara", "Fergana", "Tashkent"]
-    print("Regions:", regions)
+    print("Regions:", *regions)
 
 
 def thirdTask():
