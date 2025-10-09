@@ -14,3 +14,12 @@
 #
 #
 # print(maxFrequencyElements([8, 2, 8, 6, 1, 1, 8]))
+def isPalindrome(s):
+    s = s.lower()
+    filtered = ''.join(filter(str.isalnum, s.lower()))
+    print(filtered)
+
+    return filtered == filtered[::-1]
+
+
+print(isPalindrome("  "))
