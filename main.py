@@ -31,35 +31,49 @@
 # firstTask()
 # secondTask()
 # thirdTask()
+# def firstTask():
+#     emoji = input("Enter an emoji: ")
+#     n = int(input("Enter a number: "))
+#     try:
+#
+#         print(f"{emoji} \n" * n)
+#     except ValueError:
+#         print("Please enter a valid number.")
+#
+#
+# def secondTask():
+#     regions = ["Andijan", "Samarkand", "Bukhara", "Fergana", "Tashkent"]
+#     print("Regions:", *regions)
+
+#
+# def thirdTask():
+#     animal = input("Enter an animal: ")
+#     print(f"The animal you entered is: {animal}")
+
+
+# def fourthTask():
+#     n = int(input("Enter a number: "))
+#     try:
+#         print(n * 2)
+#     except ValueError:
+#         print("Please enter a valid number.")
+
+#
+# firstTask()
+# secondTask()
+# thirdTask()
+# fourthTask()
 def firstTask():
-    emoji = input("Enter an emoji: ")
-    n = int(input("Enter a number: "))
     try:
-
-        print(f"{emoji} \n" * n)
-    except ValueError:
-        print("Please enter a valid number.")
-
-
-def secondTask():
-    regions = ["Andijan", "Samarkand", "Bukhara", "Fergana", "Tashkent"]
-    print("Regions:", *regions)
-
-
-def thirdTask():
-    animal = input("Enter an animal: ")
-    print(f"The animal you entered is: {animal}")
-
-
-def fourthTask():
-    n = int(input("Enter a number: "))
-    try:
-        print(n * 2)
+        n = int(input("Enter a number: "))
+        n1 = int(input("Enter a number: "))
+        print(n % n1)
+        print(n // n1)
+        print(n / n1)
+        print(n + n1)
+        print((n + n1) ** 2)
     except ValueError:
         print("Please enter a valid number.")
 
 
 firstTask()
-secondTask()
-thirdTask()
-fourthTask()
