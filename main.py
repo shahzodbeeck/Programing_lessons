@@ -63,17 +63,47 @@
 # secondTask()
 # thirdTask()
 # fourthTask()
-def firstTask():
-    try:
-        n = int(input("Enter a number: "))
-        n1 = int(input("Enter a number: "))
-        print(n % n1)
-        print(n // n1)
-        print(n / n1)
-        print(n + n1)
-        print((n + n1) ** 2)
-    except ValueError:
-        print("Please enter a valid number.")
+# def firstTask():
+#     try:
+#         n = int(input("Enter a number: "))
+#         n1 = int(input("Enter a number: "))
+#         print(n % n1)
+#         print(n // n1)
+#         print(n / n1)
+#         print(n + n1)
+#         print((n + n1) ** 2)
+#     except ValueError:
+#         print("Please enter a valid number.")
+#
+#
+# firstTask()
+def secondTask():
+    name = input("Enter your name: ")
+    surname = input("Enter your surname: ")
+    print(f"Your full name is: {name} {surname}")
 
 
-firstTask()
+def thirdTask():
+    shape = input("enter a shape: ")
+    n = int(input("enter a number(which shape x contains letters: "))
+
+    for i in range(n):
+        for j in range(n):
+            if j == i or j == n - 1 - i:
+                print(shape, end="")
+            else:
+                print(" ", end="")
+        print()
+
+
+
+def fourthTask():
+    n = int(input("Enter a number: "))
+    symbol = input("Enter a symbol: ")
+    for i in range(1,n+1):
+        print(" "* (n -i)  + symbol * (2 * i - 1))
+    print(" " * (n - 1)+symbol)
+
+secondTask()
+thirdTask()
+fourthTask()
