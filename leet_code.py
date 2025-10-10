@@ -14,12 +14,28 @@
 #
 #
 # print(maxFrequencyElements([8, 2, 8, 6, 1, 1, 8]))
-def isPalindrome(s):
-    s = s.lower()
-    filtered = ''.join(filter(str.isalnum, s.lower()))
-    print(filtered)
+# def isPalindrome(s):
+#     s = s.lower()
+#     filtered = ''.join(filter(str.isalnum, s.lower()))
+#     print(filtered)
+#
+#     return filtered == filtered[::-1]
+#
+#
+# print(isPalindrome("  "))
+def findContentChildren(g, s) -> int:
+    children = 0
+    g_sorted = g
+    s_sorted = sorted(s)
 
-    return filtered == filtered[::-1]
-
-
-print(isPalindrome("  "))
+    i = 0
+    j = 0
+    while i < len(g_sorted) and j < len(s_sorted):
+        if s_sorted[j] >= g_sorted[i]:
+            children += 1
+            i += 1
+            j += 1
+        else:
+            j += 1
+    return children
+print(findContentChildren([10,9,8,7], [5,6,7,8]))
