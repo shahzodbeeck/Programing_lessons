@@ -23,19 +23,35 @@
 #
 #
 # print(isPalindrome("  "))
-def findContentChildren(g, s) -> int:
-    children = 0
-    g_sorted = g
-    s_sorted = sorted(s)
+# def findContentChildren(g, s) -> int:
+#     children = 0
+#     g_sorted = g
+#     s_sorted = sorted(s)
+#
+#     i = 0
+#     j = 0
+#     while i < len(g_sorted) and j < len(s_sorted):
+#         if s_sorted[j] >= g_sorted[i]:
+#             children += 1
+#             i += 1
+#             j += 1
+#         else:
+#             j += 1
+#     return children
+# print(findContentChildren([10,9,8,7], [5,6,7,8]))
 
+def matchPlayersAndTrainers( players, trainers):
+    players.sort()
+    trainers.sort()
     i = 0
     j = 0
-    while i < len(g_sorted) and j < len(s_sorted):
-        if s_sorted[j] >= g_sorted[i]:
-            children += 1
+    matches = 0
+    while i < len(players) and j < len(trainers):
+        if players[i] <= trainers[j]:
+            matches += 1
             i += 1
             j += 1
         else:
             j += 1
-    return children
-print(findContentChildren([10,9,8,7], [5,6,7,8]))
+    return matches
+print(matchPlayersAndTrainers([1,1,1], [10]))
