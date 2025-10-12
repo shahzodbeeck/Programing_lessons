@@ -55,15 +55,16 @@
 #             j += 1
 #     return matches
 # print(matchPlayersAndTrainers([1,1,1], [10]))
-def findMaxK( nums):
-    """
-    :type nums: List[int]
-    :rtype: int
-    """
-    nums_set = set(nums)
-    max_k = -1
-    for num in nums_set:
-        if -num in nums_set:
-            max_k = max(max_k, abs(num))
-    return max_k
+
+# def findMaxK( nums):
+#     """
+#     :type nums: List[int]
+#     :rtype: int
+#     """
+#     nums_set = set(nums)
+#     max_k = -1
+#     for num in nums_set:
+#         if -num in nums_set:
+#             max_k = max(max_k, abs(num))
+#     return max_k
 
