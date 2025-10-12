@@ -40,18 +40,30 @@
 #     return children
 # print(findContentChildren([10,9,8,7], [5,6,7,8]))
 
-def matchPlayersAndTrainers( players, trainers):
-    players.sort()
-    trainers.sort()
-    i = 0
-    j = 0
-    matches = 0
-    while i < len(players) and j < len(trainers):
-        if players[i] <= trainers[j]:
-            matches += 1
-            i += 1
-            j += 1
-        else:
-            j += 1
-    return matches
-print(matchPlayersAndTrainers([1,1,1], [10]))
+# def matchPlayersAndTrainers( players, trainers):
+#     players.sort()
+#     trainers.sort()
+#     i = 0
+#     j = 0
+#     matches = 0
+#     while i < len(players) and j < len(trainers):
+#         if players[i] <= trainers[j]:
+#             matches += 1
+#             i += 1
+#             j += 1
+#         else:
+#             j += 1
+#     return matches
+# print(matchPlayersAndTrainers([1,1,1], [10]))
+def findMaxK( nums):
+    """
+    :type nums: List[int]
+    :rtype: int
+    """
+    nums_set = set(nums)
+    max_k = -1
+    for num in nums_set:
+        if -num in nums_set:
+            max_k = max(max_k, abs(num))
+    return max_k
+
