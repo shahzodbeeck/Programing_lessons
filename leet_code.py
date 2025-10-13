@@ -68,3 +68,47 @@
 #             max_k = max(max_k, abs(num))
 #     return max_k
 
+
+# def removeElement( nums, val):
+#     """
+#     :type nums: List[int]
+#     :type val: int
+#     :rtype: int
+#     """
+#     k=0
+#     for i in range(0, len(nums)):
+#         if val != nums[i]:
+#             nums[k] = nums[i]
+#             k+=1
+#     return k
+# print(removeElement([3,2,2,3], 3))
+# def strStr(haystack, needle):
+#     """
+#     :type haystack: str
+#     :type needle: str
+#     :rtype: int
+#     """
+#     i =0
+#     while len(haystack) > i:
+#         print(i)
+#         print(needle)
+#         if haystack[i:len(needle)+i] == needle:
+#             return i
+#         else:
+#             i += len(needle)
+#             print(i)
+#     return -1
+#
+#
+# print(strStr(haystack = "hello", needle = "ll"))
+def minOperations( nums):
+    """
+    :type nums: List[int]
+    :rtype: int
+    """
+    count = 0
+    for i in range(0, len(nums)):
+        if nums[0] == nums[i]:
+            count += 1
+    return 0 if count == len(nums) else 1
+print(minOperations([1, 2, 3, 4, 5]))
