@@ -120,3 +120,41 @@
 # thirdTask()
 # fourthTask()
 # fiveth()
+
+# name = "Shahzod"
+# print("Hello " + name)
+# word = "Python d"
+# print(len(word))
+# print(word.upper())
+# print(word.lower())
+# print(word.capitalize())
+# print(word.title())
+# print(word.isalpha())
+# print(word.islower())
+# print(word.isnumeric())
+# print(word.isupper())
+# print(word.isspace())
+# print(type(word))
+
+
+# ________________________HOMEWORK_________________________#
+def firstTask():
+    var = "I am pdp student"
+    print(var)
+    student = "shahzod"
+    print(student)
+    student = "bobur"
+    print(student)
+    print(len(var + student))
+
+def secondTask():
+    int_num = int(input("Enter a number: "))
+    float_num = float(input("Enter a float number: "))
+    answer = input("Do you want to add these numbers? (yes/no): ")
+    is_add = bool(answer.lower() == "yes")
+    if is_add:
+        print(int_num + float_num)
+    else:
+        print(int_num - float_num)
+firstTask()
+secondTask()
