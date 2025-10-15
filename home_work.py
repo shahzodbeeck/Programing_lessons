@@ -1,37 +1,35 @@
-def thirdTask():
-    shape = input("enter a shape: ")
-    n = int(input("enter a number(which shape x contains letters: "))
+def firstTask():
+    variable = "I am pdp student"
+    print(variable)
+    student = "shahzod"
+    print(student)
+    student = "bobur"
+    print(student)
+    print(len(variable + student))
 
-    for i in range(n):
-        for j in range(n):
-            if j == i or j == n - 1 - i:
-                print(shape, end="")
+
+def secondTask():
+    """
+    this task worked as calculator but calculate float and int only +- if yes it does + else it does -
+    :return: It is void function
+    """
+    int_num = int(input("Enter a number: "))
+    float_num = float(input("Enter a float number: "))
+    while True:
+        answer = input("Do you want to add these numbers? (yes/no): ")
+        if answer.lower() == "yes":
+            print(int_num + float_num)
+            break
+        elif answer.lower() == "no":
+            if int_num > float_num:
+                print(int_num - float_num)
+                break
             else:
-                print(" ", end="")
-        print()
+                print(float_num - int_num)
+                break
+        else:
+            print("Invalid input, Please try again.")
 
 
-def fourthTask():
-    n = int(input("Enter a number: "))
-    symbol = input("Enter a symbol: ")
-    for i in range(1, n + 1):
-        print(" " * (n - i) + symbol * (2 * i - 1))
-    print(" " * (n - 1) + symbol)
-
-
-def fiveth():
-    shape = input("Enter a shape: ")
-    n = int(input("Enter a number (height of Z): "))
-
-    for i in range(n):
-        for j in range(n):
-            if i == 0 or i == n - 1 or j == n - 1 - i:
-                print(shape, end="")
-            else:
-                print(" ", end="")
-        print()
-
-
-thirdTask()
-fourthTask()
-fiveth()
+firstTask()
+secondTask()

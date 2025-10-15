@@ -137,39 +137,62 @@
 # print(type(word))
 
 
-# ________________________HOMEWORK_________________________#
-def firstTask():
-    variable = "I am pdp student"
-    print(variable)
-    student = "shahzod"
-    print(student)
-    student = "bobur"
-    print(student)
-    print(len(variable + student))
-
-
-def secondTask():
-    """
-    this task worked as calculator but calculate float and int only +- if yes it does + else it does -
-    :return: It is void function
-    """
-    int_num = int(input("Enter a number: "))
-    float_num = float(input("Enter a float number: "))
-    while True:
-        answer = input("Do you want to add these numbers? (yes/no): ")
-        if answer.lower() == "yes":
-            print(int_num + float_num)
-            break
-        elif answer.lower() == "no":
-            if int_num > float_num:
-                print(int_num - float_num)
-                break
-            else:
-                print(float_num - int_num)
-                break
-        else:
-            print("Invalid input, Please try again.")
-
-
-firstTask()
-secondTask()
+# _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*HOMEWORK*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_#
+# def firstTask():
+#     variable = "I am pdp student"
+#     print(variable)
+#     student = "shahzod"
+#     print(student)
+#     student = "bobur"
+#     print(student)
+#     print(len(variable + student))
+#
+#
+# def secondTask():
+#     """
+#     this task worked as calculator but calculate float and int only +- if yes it does + else it does -
+#     :return: It is void function
+#     """
+#     int_num = int(input("Enter a number: "))
+#     float_num = float(input("Enter a float number: "))
+#     while True:
+#         answer = input("Do you want to add these numbers? (yes/no): ")
+#         if answer.lower() == "yes":
+#             print(int_num + float_num)
+#             break
+#         elif answer.lower() == "no":
+#             if int_num > float_num:
+#                 print(int_num - float_num)
+#                 break
+#             else:
+#                 print(float_num - int_num)
+#                 break
+#         else:
+#             print("Invalid input, Please try again.")
+#
+#
+# firstTask()
+# secondTask()
+# _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*| Lesson Tasks |*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_#
+# del element uchiradi without returning
+# pop elementni index bilan uchiradi returin qiladi
+# remove elementni uzini value bilan uchiradi
+# insert qushadi indexga
+# append ohiriga qushadi
+# del indexsiz bersa listni full uchiradi o'zgaruvchini ham
+# clear listni tozalidi []
+# extend 2 ta listni qoshadi alternative +
+# sort saralaydi
+# ascending -1-9 descending 9-0
+# len lengini qaytaradu startdan endgachon oladi end'ni o'zi kirmaydi -1 ohirgisini oladi
+# vegetables = ["carrot", "potato", "tomato", "onion"]
+# print(vegetables[2])
+# my_list = [1, 2, 3, 4, 5]
+# print(my_list[0])
+# print(my_list[4])
+# my_list_2 = [1, 2, 3, 4, 5]
+# my_list_2.append(6)
+# print(my_list_2)
+# fruits = ["apple", "banana", "cherry"]
+# fruits.insert(1, "banana")
+# print(fruits)
