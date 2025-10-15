@@ -150,7 +150,7 @@ def firstTask():
 
 def secondTask():
     """
-    this task like calculator but calculate float and int only +- if yes it does + else it does -
+    this task worked as calculator but calculate float and int only +- if yes it does + else it does -
     :return: It is void function
     """
     int_num = int(input("Enter a number: "))
