@@ -234,47 +234,47 @@
 # fourthTask()
 
 
-def fifthTask():
-    numbers = [5, 10, 15, 20, 25]
-    numbers.pop(0)
-    numbers.pop(-1)
-    print(numbers)
-
-
-fifthTask()
-
-
-def sixthTask():
-    fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
-    fruits = [fruits.pop(1)]
-    print(fruits)
-
-
-sixthTask()
-
-
-def seventhTask():
-    items = [1, 2, 3, 4, 5]
-    items.clear()
-    print(items)
-
-
-seventhTask()
-
-
-def eighthTask():
-    cars = ['Toyota', 'Ford', 'BMW', "Audi"]
-    cars.append(cars.pop(1))
-    print(cars)
-
-
-eighthTask()
-
-
-def ninthTask():
-    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    numbers.reverse()
-    print(numbers)
-
-
-ninthTask()
+# def fifthTask():
+#     numbers = [5, 10, 15, 20, 25]
+#     numbers.pop(0)
+#     numbers.pop(-1)
+#     print(numbers)
+#
+#
+# fifthTask()
+#
+#
+# def sixthTask():
+#     fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+#     fruits = [fruits.pop(1)]
+#     print(fruits)
+#
+#
+# sixthTask()
+#
+#
+# def seventhTask():
+#     items = [1, 2, 3, 4, 5]
+#     items.clear()
+#     print(items)
+#
+#
+# seventhTask()
+#
+#
+# def eighthTask():
+#     cars = ['Toyota', 'Ford', 'BMW', "Audi"]
+#     cars.append(cars.pop(1))
+#     print(cars)
+#
+#
+# eighthTask()
+#
+#
+# def ninthTask():
+#     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#     numbers.reverse()
+#     print(numbers)
+#
+#
+# ninthTask()
