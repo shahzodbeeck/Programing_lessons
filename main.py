@@ -45,6 +45,7 @@
 #     regions = ["Andijan", "Samarkand", "Bukhara", "Fergana", "Tashkent"]
 #     print("Regions:", *regions)
 
+
 #
 # def thirdTask():
 #     animal = input("Enter an animal: ")
@@ -196,3 +197,84 @@
 # fruits = ["apple", "banana", "cherry"]
 # fruits.insert(1, "banana")
 # print(fruits)
+# def fisrtTask():
+#     fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+#     fruits.pop(1)
+#     fruits.pop(2)
+#     print(fruits)
+#
+#
+# fisrtTask()
+#
+#
+# def secondTask():
+#     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#     oddnumbers = list(filter(lambda x: x % 2 != 0, numbers))
+#     print(oddnumbers)
+#
+#
+# secondTask()
+#
+#
+# def thirdTask():
+#     my_list = [10, 20, 30, 40, 50, 60, 70, 80]
+#     del my_list[3:5]
+#     print(my_list)
+#
+#
+# thirdTask()
+#
+#
+# def fourthTask():
+#     cities = ["New york", "london", "TOkyo", "Moscow", "Paris"]
+#     cities.pop(2)
+#     print(cities)
+#
+#
+# fourthTask()
+
+
+def fifthTask():
+    numbers = [5, 10, 15, 20, 25]
+    numbers.pop(0)
+    numbers.pop(-1)
+    print(numbers)
+
+
+fifthTask()
+
+
+def sixthTask():
+    fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+    fruits = [fruits.pop(1)]
+    print(fruits)
+
+
+sixthTask()
+
+
+def seventhTask():
+    items = [1, 2, 3, 4, 5]
+    items.clear()
+    print(items)
+
+
+seventhTask()
+
+
+def eighthTask():
+    cars = ['Toyota', 'Ford', 'BMW', "Audi"]
+    cars.append(cars.pop(1))
+    print(cars)
+
+
+eighthTask()
+
+
+def ninthTask():
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    numbers.reverse()
+    print(numbers)
+
+
+ninthTask()
