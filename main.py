@@ -278,3 +278,31 @@
 #
 #
 # ninthTask()
+
+def homeTask():
+    project_name = "Project"
+    admin = "admin"
+    students = ['Anvar', 'Dilshod', 'Malika']
+    print(project_name)
+    print(admin)
+    print(students)
+    students.append("Sardor")
+    print("Appendan keyin",students)
+    students.insert(1, "Otabek")
+    print("Insertdan keyin",students)
+    students.extend(['Gulnoza', 'Islom'])
+    print("extend keyin",students)
+    students.remove("Dilshod")
+    print("remove keyin",students)
+    print(students.pop(-1))
+    print("pop keyin",students)
+    del students[0]
+    print("del keyin",students)
+    students.sort()
+    print("sort keyin",students)
+    students.sort(reverse=True)
+    print("sort reversed keyin",students)
+    students.clear()
+    print("clear keyin",students)
+    print(len(students))
+homeTask()
