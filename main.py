@@ -279,30 +279,88 @@
 #
 # ninthTask()
 
-def homeTask():
-    project_name = "Project"
-    admin = "admin"
-    students = ['Anvar', 'Dilshod', 'Malika']
-    print(project_name)
-    print(admin)
-    print(students)
-    students.append("Sardor")
-    print("Appendan keyin",students)
-    students.insert(1, "Otabek")
-    print("Insertdan keyin",students)
-    students.extend(['Gulnoza', 'Islom'])
-    print("extend keyin",students)
-    students.remove("Dilshod")
-    print("remove keyin",students)
-    print(students.pop(-1))
-    print("pop keyin",students)
-    del students[0]
-    print("del keyin",students)
-    students.sort()
-    print("sort keyin",students)
-    students.sort(reverse=True)
-    print("sort reversed keyin",students)
-    students.clear()
-    print("clear keyin",students)
-    print(len(students))
-homeTask()
+# def homeTask():
+#     project_name = "Project"
+#     admin = "admin"
+#     students = ['Anvar', 'Dilshod', 'Malika']
+#     print(project_name)
+#     print(admin)
+#     print(students)
+#     students.append("Sardor")
+#     print("Appendan keyin",students)
+#     students.insert(1, "Otabek")
+#     print("Insertdan keyin",students)
+#     students.extend(['Gulnoza', 'Islom'])
+#     print("extend keyin",students)
+#     students.remove("Dilshod")
+#     print("remove keyin",students)
+#     print(students.pop(-1))
+#     print("pop keyin",students)
+#     del students[0]
+#     print("del keyin",students)
+#     students.sort()
+#     print("sort keyin",students)
+#     students.sort(reverse=True)
+#     print("sort reversed keyin",students)
+#     students.clear()
+#     print("clear keyin",students)
+#     print(len(students))
+# homeTask()
+
+# _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*| Lesson Tasks (Tuple)|*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_#
+
+# numbers =(1,2,3,4,5)
+# print(numbers)
+# print(type(numbers))
+# single_tupleee
+
+# single_tuple =(1,)
+# print(single_tuple)
+# print(type(single_tuple))
+# nums =(1,2,3,4,5)
+# nums[0] =4
+# print(nums)
+
+# computer_elements =('Cpu','Keyboard','Motherboard','Keyboard','Keyboard')
+# print(computer_elements.index('Cpu'))
+# print(computer_elements.count('Keyboard'))
+
+# fruits = ('apple', 'banana', 'cherry', 'orange', 'kiwi')
+# print(fruits[0])
+# print(fruits[-1])
+# print(fruits.index('cherry'),fruits[fruits.index('cherry')])
+#
+# numbers =(1,2,3,4,2,5,6,2)
+# print(numbers.count(2))
+# print(numbers.index(5))
+#
+# colors = ('red', 'green', 'blue')
+# colors =list(colors)
+# colors.append('yellow')
+# print(tuple(colors))
+#
+# letters = ('a', 'b', 'c', 'd', 'e')
+# letters = list(letters)
+# letters.reverse()
+# print(tuple(letters))
+#
+# nested = (1,2,(3,4,5),6,7)
+# print(nested[2])
+# for item in nested:
+#     if type(item) == tuple:
+#         for i in item:
+#             print(i)
+#     else:
+#         print(item)
+
+# my_tuple =(10,20,30,40,50)
+# my_tuple = list(my_tuple)
+# my_tuple.append(60)
+# print(tuple(my_tuple))
+#
+# first_tuple =(1,2,3,4)
+# second_tuple = (5,6,7,8)
+# third_tuple = first_tuple + second_tuple
+# print(third_tuple)
+#
+
