@@ -1,35 +1,25 @@
-def firstTask():
-    variable = "I am pdp student"
-    print(variable)
-    student = "shahzod"
-    print(student)
-    student = "bobur"
-    print(student)
-    print(len(variable + student))
-
-
-def secondTask():
-    """
-    this task worked as calculator but calculate float and int only +- if yes it does + else it does -
-    :return: It is void function
-    """
-    int_num = int(input("Enter a number: "))
-    float_num = float(input("Enter a float number: "))
-    while True:
-        answer = input("Do you want to add these numbers? (yes/no): ")
-        if answer.lower() == "yes":
-            print(int_num + float_num)
-            break
-        elif answer.lower() == "no":
-            if int_num > float_num:
-                print(int_num - float_num)
-                break
-            else:
-                print(float_num - int_num)
-                break
-        else:
-            print("Invalid input, Please try again.")
-
-
-firstTask()
-secondTask()
+project_name = "Project"
+admin = "admin"
+students = ['Anvar', 'Dilshod', 'Malika']
+print(project_name)
+print(admin)
+print(students)
+students.append("Sardor")
+print("Appendan keyin",students)
+students.insert(1, "Otabek")
+print("Insertdan keyin",students)
+students.extend(['Gulnoza', 'Islom'])
+print("extend keyin",students)
+students.remove("Dilshod")
+print("remove keyin",students)
+print(students.pop(-1))
+print("pop keyin",students)
+del students[0]
+print("del keyin",students)
+students.sort()
+print("sort keyin",students)
+students.sort(reverse=True)
+print("sort reversed keyin",students)
+students.clear()
+print("clear keyin",students)
+print(len(students))
