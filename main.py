@@ -412,3 +412,26 @@ print(students.index('zarina'))
 my_tuple =5,10,15,20,25
 print(my_tuple[2])
 print(len(my_tuple))
+# task 5
+my_tuple =1,2,3
+my_list =[1,2,3]
+my_list.append(4)
+"""we cannot append tuple beacuse is unmutable"""
+"""list mutable tuple unmutable ,we need breakets for create list but tuple only need comma"""
+
+#task 6
+
+colors ='red','green','blue'
+colors =list(colors)
+colors.append('yellow')
+print(tuple(colors))
+
+#Task 7
+numbers=[5,10,15,20,25]
+numbers.append(30)
+numbers.reverse()
+print(numbers)
+my_tuple_2 =10,20,30,40
+my_tuple_2 =list(my_tuple_2)
+my_tuple_2.reverse()
+print(list(my_tuple_2))
