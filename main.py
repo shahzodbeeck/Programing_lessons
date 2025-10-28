@@ -362,5 +362,53 @@
 # second_tuple = (5,6,7,8)
 # third_tuple = first_tuple + second_tuple
 # print(third_tuple)
+# #-----------------------Task 1 -------------------#
 #
+# my_tup =4,6,2,8,3,1
+# print(my_tup)
+# my_tup=list(my_tup)
+# my_tup.append(9)
+# print(tuple(my_tup))
+# list(my_tup)
+# my_tup[4:4]=[15,20,25]
+# print(list(my_tup))
+# my_tup.append(30)
+# print(tuple(my_tup))
+#
+# #-------------------------------------Task 2---------------------------------#
+# print("Task 2")
+# tup_2=10,4,7,2,9,1,5
+# tup_2=list(tup_2)
+# tup_2.append(12)
+# print(tuple(tup_2))
+# tup_2=list(tup_2)
+# tup_2[2:2]=[20,25]
+# print(tuple(tup_2))
+# tup_2=list(tup_2)
+# tup_2.remove(min(tup_2))
+# tup_2.sort()
+# tup_2.insert(0,100)
+# print(tuple(tup_2))
 
+# task1
+numbers =[10,20,30,40,50]
+numbers[0]=100
+print(numbers)
+numbers.append(60)
+print(numbers)
+print(len(numbers))
+#task 2
+fruits =["appl;e","banana","cherry"]
+fruits[-1:-1] =['orange','kiwi']
+print(fruits)
+fruits[1]='mango'
+fruits.sort()
+print(fruits)
+#task 3
+students =["Ali","olim","zarina","jasur","sabina"]
+print(students.index('zarina'))
+
+#task 4
+my_tuple =5,10,15,20,25
+print(my_tuple[2])
+print(len(my_tuple))

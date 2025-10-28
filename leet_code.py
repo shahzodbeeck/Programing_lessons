@@ -101,14 +101,21 @@
 #
 #
 # print(strStr(haystack = "hello", needle = "ll"))
-def minOperations( nums):
-    """
-    :type nums: List[int]
-    :rtype: int
-    """
-    count = 0
-    for i in range(0, len(nums)):
-        if nums[0] == nums[i]:
-            count += 1
-    return 0 if count == len(nums) else 1
-print(minOperations([1, 2, 3, 4, 5]))
+# def minOperations( nums):
+#     """
+#     :type nums: List[int]
+#     :rtype: int
+#     """
+#     count = 0
+#     for i in range(0, len(nums)):
+#         if nums[0] == nums[i]:
+#             count += 1
+#     return 0 if count == len(nums) else 1
+# print(minOperations([1, 2, 3, 4, 5]))
+
+def tupleSameProduct( nums):
+    for i in nums:
+        for j in nums:
+            if i != j:
+                print(i*j)
+tupleSameProduct([2,3,4,6])
