@@ -454,3 +454,27 @@ for i in nested_tuple:
 numbers = [2, 4, 6, 8, 10]
 new_list = list(map(lambda x: x * 2, numbers))
 print(new_list)
+# task 11
+my_list_2 = ['apple', 'banana', 'cherry', 'date', 'fig']
+my_list_2.remove('cherry')
+print(my_list_2)
+my_list_2.pop(-1)
+print(my_list_2)
+# task 12
+ages = [34, 23, 45, 27, 56, 18]
+print(ages.sort())
+print(ages.sort(reverse=True))
+# task 13
+numbers = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7]
+numbers = set(numbers)
+print(list(numbers))
+# task 14
+numbers_tup = 10, 50, 25, 5, 100, 75
+print(max(numbers_tup))
+print(min(numbers_tup))
+# task 15
+my_list_22 = [10, 20, 30, 40, 50, 60]
+list_2 = []
+for num in range(len(my_list_22) - 1):
+    list_2.append((my_list_22[num], my_list_22[num + 1]))
+print(list_2)
