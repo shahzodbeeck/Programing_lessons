@@ -45,7 +45,6 @@
 #     regions = ["Andijan", "Samarkand", "Bukhara", "Fergana", "Tashkent"]
 #     print("Regions:", *regions)
 
-
 #
 # def thirdTask():
 #     animal = input("Enter an animal: ")
@@ -479,28 +478,32 @@
 #     list_2.append((my_list_22[num], my_list_22[num + 1]))
 # print(list_2)
 #task 16
-alphabet =('a','b','c','d','e','f','g')
-new_tup =alphabet[0:3]
-print(new_tup)
-lasts = alphabet[-3:]
-print(lasts)
+# alphabet =('a','b','c','d','e','f','g')
+# new_tup =alphabet[0:3]
+# print(new_tup)
+# lasts = alphabet[-3:]
+# print(lasts)
+#
+# #tasks 17
+# names = ['Ali','Olim','Zarina','Jasur']
+# for i in names:
+#     print(i + " - talaba")
+# #tasks 18
+# temperatures = 22,25,28,30,27,23
+# for i in temperatures:
+#     print(str(i) + " Temperatures")
+# #task 19
+# my_list=[1,5,'banana',10,'apple',20]
+# sum_values = filter(lambda x: type(x) == int, my_list)
+# print(sum(list(sum_values)))
+# #task 20
+# my_list =[10,20,30]
+# my_tup = 40,50,60
+# my_tup =list(my_tup)
+# my_list[0],my_tup[0]=my_tup[0],my_list[0]
+# print(my_list)
+# print(tuple(my_tup))
 
-#tasks 17
-names = ['Ali','Olim','Zarina','Jasur']
-for i in names:
-    print(i + " - talaba")
-#tasks 18
-temperatures = 22,25,28,30,27,23
-for i in temperatures:
-    print(str(i) + " Temperatures")
-#task 19
-my_list=[1,5,'banana',10,'apple',20]
-sum_values = filter(lambda x: type(x) == int, my_list)
-print(sum(list(sum_values)))
-#task 20
-my_list =[10,20,30]
-my_tup = 40,50,60
-my_tup =list(my_tup)
-my_list[0],my_tup[0]=my_tup[0],my_list[0]
-print(my_list)
-print(tuple(my_tup))
+
+
+#New leeson if else#
