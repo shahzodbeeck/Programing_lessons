@@ -477,7 +477,7 @@
 # for num in range(len(my_list_22) - 1):
 #     list_2.append((my_list_22[num], my_list_22[num + 1]))
 # print(list_2)
-#task 16
+# task 16
 # alphabet =('a','b','c','d','e','f','g')
 # new_tup =alphabet[0:3]
 # print(new_tup)
@@ -504,6 +504,269 @@
 # print(my_list)
 # print(tuple(my_tup))
 
+#
+# a = " "
+# if a:
+#     print("hello")
+# else:
+#     print("ss")
+# x =3
+# if x >2:
+#     x+=2
+# if x>4:
+#     x+=1
+# else:
+#     x-=1
+# print(x)
+# New leeson if else#
 
+# i = 1
+# while i < 6:
+#     print(i)
+#     i += 1
+# task 1
+# numbers = int(input("enter numbers : "))
+# nums =1
+# while True :
+#     numbers  = numbers // 10
+#     if numbers > 0 :
+#         nums +=1
+#     else:
+#         break
+# print(nums)
+# # #task 2
+# sum =0
+# while True :
+#     ask = int(input("enter number : "))
+#     if ask ==0 :
+#         break
+#
+#     if ask > 0 :
+#         sum += ask
+# print(f"sum {sum}")
+# # task 3
+# num_count = int(input("enter number counts : "))
+# my_list = []
+# while True :
+#     if len(my_list) == num_count :
+#         break
+#     ask = int(input("enter number : "))
+#     my_list.append(ask)
+# print(my_list)
+# # task 4
+# a = int(input("enter a number : "))
+# b = int(input("enter b : "))
+# sum=0
+# while a < b:
+#     a += 1
+#     sum += a
+# print(sum)
+# #task 5
+# largest =[1,2,3,4,5,6,6,7,8,8,9,10,10,11,12,13,14,15,16,17,18,19,20]
+# max_num= largest[0]
+# i =1
+# while i < len(largest):
+#     if largest[i] > max_num:
+#         max_num = largest[i]
+#     i+=1
+#
+# print(max_num)
+# #task 6
+# i_n =0
+# while i_n < len(largest):
+#     i_n +=1
+# print(i_n)
 
-#New leeson if else#
+# #task 7
+# list_my = [1, 20, 14, 5 ,-6]
+# min_num_my = list_my[0]
+# max_num_my = list_my[0]
+# i = 0
+# while i < len(list_my):
+#     if list_my[i] > max_num_my:
+#         max_num_my = list_my[i]
+#     if list_my[i] < min_num_my:
+#         min_num_my = list_my[i]
+#     i += 1
+# print("Max num my =", max_num_my)
+# print("Min num my =", min_num_my)
+# #task 8
+# list_my_swap = [1, 20, 14, 5 ,-6]
+# min_num_my = list_my[0]
+# max_num_my = list_my[0]
+# max_num_i =0
+# min_num_i =0
+# i = 0
+# while i < len(list_my):
+#     if list_my[i] > max_num_my:
+#         max_num_my = list_my[i]
+#         max_num_i = i
+#     if list_my[i] < min_num_my:
+#         min_num_my = list_my[i]
+#         min_num_i = i
+#     i += 1
+# else:
+#     list_my_swap[max_num_i],list_my_swap[min_num_i] = min_num_my, max_num_my
+# print(list_my_swap)
+# #task 9
+# enter  = input("Enter your number: ")
+# index=0
+# while index < len(list_my_swap):
+#     if enter == list_my_swap[index]:
+#         print("Your number is ", list_my_swap[index])
+# else:
+#     print("Number not found")
+# task 10 find gcd
+# a = int(input("Enter your number: "))
+# b = int(input("Enter your number: "))
+# while b != 0:
+#     a, b = b, a % b
+# print(a)
+
+# task 11
+# num_a = int(input("Enter your number: "))
+# num_b = int(input("Enter your number: "))
+# cc = num_a * num_b
+# while num_b != 0:
+#     num_a, num_b = num_b, num_a % num_b
+# print(int(cc / num_a))
+#
+# print(num_b)
+# print(num_a)
+# task 1
+# given_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+# ask_num = int(input("Enter a number: "))
+# index = 0
+# while index < len(given_list):
+#     if ask_num == given_list[index]:
+#         print(True)
+#         break
+#     index += 1
+# else:
+#     print(False)
+# # task 2
+# i = 100
+#
+# while i <= 999:
+#     num = str(i)
+#     sums = int(num[0]) + int(num[1]) + int(num[2])
+#     if sums > 5 and sums < 8:
+#         print(i)
+#
+#     i += 1
+# task 3
+# task 3
+# entered_num = int(input("Enter a number: "))
+# str_num = str(entered_num)
+# ind = len(str_num)-1
+# new_str_num = ""
+# while ind >= 0:
+#     new_str_num += str_num[ind]
+#     ind -= 1
+# if new_str_num == str_num:
+#     print("IS palidrome")
+# else:
+#     print("NOT palidrome")
+# # task 4
+# you_what_num = int(input("Enter a number: "))
+# sums = 0
+# indx = 0
+# while indx < you_what_num:
+#     enter = int(input("Enter a number: "))
+#     sums = sums + enter
+#     indx += 1
+# # task 5
+# how = int(input("Enter a number: "))
+# inde = 0
+# lists = []
+# while ind < how:
+#     ent = int(input("Enter a number: "))
+#     lists.append(ent)
+#     inde += 1
+# print(max(lists))
+# # task 6
+# how = int(input("Enter a number: "))
+# inde = 0
+# lists = []
+# while ind < how:
+#     ent = int(input("Enter a number: "))
+#     lists.append(ent)
+#     inde += 1
+# print(min(lists))
+#
+# # task 7
+# list_my = [2, 3, 4, 5, 5, 6, 6, 7, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+# id = 0
+# while ind < len(lists):
+#     lists[ind] = list_my[id] * 2
+#     id += 1  # task 8
+# task 8
+# enter_num = int(input("Enter a number: "))
+# divisors =[]
+# numss=enter_num
+#
+# while True:
+#     enter_num = enter_num / 2
+#     enter_num = ceil(enter_num)
+#     divisors.append((enter_num))
+#     if enter_num == 0 or enter_num == 1:
+#         break
+#
+#
+# if numss == sum(divisors):
+#     print("Perfect")
+# else:
+#     print("Not perfect")
+# task 9
+
+# num = int(input("Enter a number: "))
+# while True:
+#     num = num // 2
+#     if num % 2 != 0:
+#         print("Not a power of two")
+#         break
+#
+#     if  num == 2:
+#         print('Power of two')
+#         break
+#     elif num == 1:
+#         print('Not a power of two')
+#         break
+#task 10
+# num = int(input("Enter a number: "))
+# sums = 0
+# while True:
+#     num = num // 2
+#     if num % 2 != 0:
+#         print("Not a power of two")
+#         break
+#     sums +=1
+#
+#     if  num == 2:
+#         print('Power of two')
+#         print(sums)
+#         break
+#     elif num == 1:
+#         print('Not a power of two')
+#         break
+#task 11
+# num = int(input("Enter a number: "))
+# index =1
+# sum =1
+# while index <= num:
+#     sum *= index
+#     index += 1
+# print(sum)
+#task 12
+
+lists = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+i=0
+even=[]
+odd =[]
+while i < len(lists):
+    if lists[i] % 2 == 0:
+        even.append(lists[i])
+    else:
+        odd.append(lists[i])
+print(odd)
+print(even)
