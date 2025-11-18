@@ -1,4 +1,4 @@
-num = 123
-print(num // 100)
-print(num % 100 // 10)
-print(num % 10)
+import requests
+
+response =requests.get('https://cbu.uz/uz/arkhiv-kursov-valyut/json/')
+print(response.json())
