@@ -732,7 +732,7 @@
 #     elif num == 1:
 #         print('Not a power of two')
 #         break
-#task 10
+# task 10
 # num = int(input("Enter a number: "))
 # sums = 0
 # while True:
@@ -749,7 +749,7 @@
 #     elif num == 1:
 #         print('Not a power of two')
 #         break
-#task 11
+# task 11
 # num = int(input("Enter a number: "))
 # index =1
 # sum =1
@@ -757,7 +757,7 @@
 #     sum *= index
 #     index += 1
 # print(sum)
-#task 12
+# task 12
 
 # lists = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # i=0
@@ -772,53 +772,162 @@
 # print(even)
 
 
-#task 13
+# task 13
 
-i =1
-n = int(input("Enter a number: "))
-while i<=10:
-    print(i*n)
-    i = i + 1
+# i =1
+# n = int(input("Enter a number: "))
+# while i<=10:
+#     print(i*n)
+#     i = i + 1
+#
+# #task 14
+# given_list =['toyota', 'toyota 1', 'toyota 2', 'toyota 3 d f']
+# max_len = len(given_list[0])
+# i = 0
+# index=0
+# while i < len(given_list):
+#     if len(given_list[i])>max_len:
+#         max_len = len(given_list[i])
+#         index = i
+#     i+=1
+# print(given_list[index])
+#
+# #task 15
+# given_list =['toyota', 'toyota 1', 'toyota 2', 'toyota 3 d f','bmw','olma']
+# i = 0
+# index=0
+# while i < len(given_list):
+#     if given_list[i][-1] == 'a':
+#         print(given_list[i])
+#     i+=1
+#
+#
+# #home task
+# all_words =[]
+# seen_words = set()
+# while True:
+#     ask_word = input("Enter a word: ")
+#     if ask_word == "quit":
+#         break
+#     elif ask_word not in seen_words:
+#         all_words.append(ask_word)
+#         seen_words.add(ask_word)
+#     else:
+#         print("Word already in use,Not added")
+#
+# summary={
+#     "total_words": len(all_words),
+#     "status": "No words added" if not all_words else "All words added" ,
+# }
+# print(summary)
+# print(all_words)
+# print(seen_words)
 
-#task 14
-given_list =['toyota', 'toyota 1', 'toyota 2', 'toyota 3 d f']
-max_len = len(given_list[0])
-i = 0
-index=0
-while i < len(given_list):
-    if len(given_list[i])>max_len:
-        max_len = len(given_list[i])
-        index = i
-    i+=1
-print(given_list[index])
 
-#task 15
-given_list =['toyota', 'toyota 1', 'toyota 2', 'toyota 3 d f','bmw','olma']
-i = 0
-index=0
-while i < len(given_list):
-    if given_list[i][-1] == 'a':
-        print(given_list[i])
-    i+=1
+"""
+Break va continue Practice
+Task 1
+1 dan 10 gacha bo'lgan sonlarni chop eting, lekin agar son 5 ga teng bo'lsa, siklni to'xtating (break).
+Task 2
+1 dan 20 gacha bo'lgan toq sonlarni chop eting. Juft sonlar uchun siklni davom ettirishda continue
+ishlating.
+Task 3
+Foydalanuvchidan son kiritishni so'rang. Agar son manfiy bo'lsa, dastur break qilsin va sikl tugasin.
+Aks holda, sonni chop eting. Sikl cheksiz bo'lsin (while True).
+Task 4
+eo yna ogi hau bi samenteni ek shiol a, sarelem ent ing ora, uni chop etmang va siklni davom
+Task 5
+1 dan 100 gacha bo'lgan sonlarni tekshiring. Agar son 13 ga karrali bo'lsa, sikini to'xtating (break).
+Boshqa hamma sonlarni chop eting.
+"""
+from random import randint
 
 
-#home task
-all_words =[]
-seen_words = set()
-while True:
-    ask_word = input("Enter a word: ")
-    if ask_word == "quit":
-        break
-    elif ask_word not in seen_words:
-        all_words.append(ask_word)
-        seen_words.add(ask_word)
-    else:
-        print("Word already in use,Not added")
+def task_1():
+    for i in range(10):
+        if i == 5:
+            break
+        print(i)
 
-summary={
-    "total_words": len(all_words),
-    "status": "No words added" if not all_words else "All words added" ,
-}
-print(summary)
-print(all_words)
-print(seen_words)
+
+def task_2():
+    for i in range(20):
+        if i % 2 != 0:
+            print(i)
+        else:
+            continue
+
+
+def task_3():
+    while True:
+        a = int(input("a"))
+        if a < 0:
+            break
+        else:
+            print(a)
+
+
+def task_4():
+    for i in range(randint(0, 100)):
+        if i == 0:
+            print(i)
+            continue
+        elif i == 99:
+            break
+
+
+def task_5():
+    for i in range(100):
+        if i % 13 == 0:
+            break
+        else:
+            print(i)
+
+
+def task_6():
+    my_list = ['salom', 'alik', 'xello', 'stop']
+    for i in my_list:
+        if i == 'stop':
+            break
+        if "x" in i:
+            continue
+        else:
+            print(i)
+
+
+def task_7():
+    my_list = []
+    while True:
+        a = input("a")
+        if a == "exit":
+            break
+        if a:
+            my_list.append(a)
+
+
+def task_8():
+    for i in range(50):
+        if i % 2 != 0:
+            print(i)
+        if i > 31:
+            break
+
+
+def task_9():
+    numbers = [2, 4, 6, 0, 8, 10, 0, 12, 99, 14]
+    for n in numbers:
+        if n == 0:
+            continue
+        elif n == 99:
+            break
+
+
+def task_10():
+    for i in range(1, 100):
+        if i <= 10 or i >= 30:
+            print(i)
+        if i == 50:
+            break
+
+
+task_10()
