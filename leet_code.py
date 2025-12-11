@@ -113,9 +113,9 @@
 #     return 0 if count == len(nums) else 1
 # print(minOperations([1, 2, 3, 4, 5]))
 
-def tupleSameProduct( nums):
-    for i in nums:
-        for j in nums:
-            if i != j:
-                print(i*j)
-tupleSameProduct([2,3,4,6])
+# def tupleSameProduct( nums):
+#     for i in nums:
+#         for j in nums:
+#             if i != j:
+#                 print(i*j)
+# tupleSameProduct([2,3,4,6])

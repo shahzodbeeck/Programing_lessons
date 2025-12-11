@@ -840,94 +840,461 @@ Task 5
 1 dan 100 gacha bo'lgan sonlarni tekshiring. Agar son 13 ga karrali bo'lsa, sikini to'xtating (break).
 Boshqa hamma sonlarni chop eting.
 """
-from random import randint
+
+# from random import randint
+#
+#
+# def task_1():
+#     for i in range(10):
+#         if i == 5:
+#             break
+#         print(i)
+#
+#
+# def task_2():
+#     for i in range(20):
+#         if i % 2 != 0:
+#             print(i)
+#         else:
+#             continue
+#
+#
+# def task_3():
+#     while True:
+#         a = int(input("a"))
+#         if a < 0:
+#             break
+#         else:
+#             print(a)
+#
+#
+# def task_4():
+#     for i in range(randint(0, 100)):
+#         if i == 0:
+#             print(i)
+#             continue
+#         elif i == 99:
+#             break
+#
+#
+# def task_5():
+#     for i in range(100):
+#         if i % 13 == 0:
+#             break
+#         else:
+#             print(i)
+#
+#
+# def task_6():
+#     my_list = ['salom', 'alik', 'xello', 'stop']
+#     for i in my_list:
+#         if i == 'stop':
+#             break
+#         if "x" in i:
+#             continue
+#         else:
+#             print(i)
+#
+#
+# def task_7():
+#     my_list = []
+#     while True:
+#         a = input("a")
+#         if a == "exit":
+#             break
+#         if a:
+#             my_list.append(a)
+#
+#
+# def task_8():
+#     for i in range(50):
+#         if i % 2 != 0:
+#             print(i)
+#         if i > 31:
+#             break
+#
+#
+# def task_9():
+#     numbers = [2, 4, 6, 0, 8, 10, 0, 12, 99, 14]
+#     for n in numbers:
+#         if n == 0:
+#             continue
+#         elif n == 99:
+#             break
+#
+#
+# def task_10():
+#     for i in range(1, 100):
+#         if i <= 10 or i >= 30:
+#             print(i)
+#         if i == 50:
+#             break
+#
+#
+# task_10()
+#
+#
+# def task_11():
+#     while True:
+#         a = int(input("a"))
+#         if a > 100:
+#             break
+#         elif a < 0:
+#             print(a)
+#
+#
+# def task_12():
+#     for i in range(1, 100):
+#         if i == 33:
+#             break
+#
+#         if i % 2 == 0 and i == 11:
+#             continue
+#         print(i)
+#
+#
+# def task_13():
+#     for i in range(1, 101):
+#
+#         if i % 5 == 0 and i % 10 != 0:
+#             continue
+#         elif i == 75:
+#             break
+#         else:
+#             print(i)
+#
+#
+# def task_14():
+#     data = ['apple', 'banana', 'cherry', 'exit', 'date', '']
+#     for x in data:
+#         if x == 'exit':
+#             break
+#         elif x == '':
+#             continue
+#         else:
+#             print(x)
+#
+#
+# def task_15():
+#     while True:
+#         password = input("password")
+#         if len(password) < 6:
+#             continue
+#         elif password == "quit":
+#             break
+#         else:
+#             print(f"{password} qabul qilindi")
+
+# def gulruxsor_ayt():
+#     gulruxsor = "Gul"
+#     print(gulruxsor)
+# gulruxsor_ayt()
+
+#
+# def hello(name):
+#     print("Hello, " + name)
+#
+#
+# hello("sha")
+#
+#
+# def add_numbers(a, b):
+#     print(a + b)
+#
+#
+# add_numbers(10, 20)
+#
+#
+# def is_positive(num):
+#     if num > 0:
+#         return True
+#     else:
+#         return False
+#
+#
+# is_positive(10)
+#
+#
+# def square(num):
+#     print(num ** 2)
+#
+#
+# def is_vowel(char):
+#     if char in 'aeiou':
+#         print(True)
+#     else:
+#         print(False)
+#
+#
+# is_vowel('a')
+#
+#
+# def calculate_perimeter(num, num2):
+#     print(2 * (num + num2))
+#
+#
+# calculate_perimeter(10, 20)
+#
+#
+# def calculate_area(num, num2):
+#     print(num * num2)
+#
+#
+# calculate_area(10, 20)
+#
+#
+# def is_even(num):
+#     if num % 2 == 0:
+#         print(True)
+#     else:
+#         print(False)
+#
+#
+# def find_max(a, b, c):
+#     if a > b and a > c:
+#         print(a)
+#     elif b > c and b > a:
+#         print(b)
+#     else:
+#         print(c)
+#
+#
+# find_max(10, 20, 30)
+#
+#
+# def factorial(num):
+#     sum_s = 1
+#     for i in range(1, num + 1):
+#         sum_s = sum_s * i
+#     print(sum_s)
+#
+#
+# def fac(num):
+#     if num == 1:
+#         return 1
+#     else:
+#         return num * fac(num - 1)
+#
+#
+# factorial(5)
+# print(fac(5))
+
+# def sum_of_squares(n):
+#     sum = 0
+#     for i in n:
+#         sum += i ** 2
+#     print(sum)
+#
+#
+# def average(n):
+#     sum = 0
+#     for i in n:
+#         sum += i
+#     print(sum / len(n))
+#
+#
+# def sum_even_numbers(numbers):
+#     return sum(x for x in numbers if x % 2 == 0)
+#
+#
+# def repeat_string(s, n):
+#     return s * n
+#
+#
+# def grade_calculator(score):
+#     if score >= 90:
+#         return "A"
+#     elif score >= 80:
+#         return "B"
+#     elif score >= 70:
+#         return "C"
+#     elif score >= 60:
+#         return "D"
+#     else:
+#         return "F"
+#
+#
+# def power_of_two(n):
+#     return 2 ** n
+#
+#
+# def make_adder(n):
+#     def adder(x):
+#         return x + n
+#
+#     return adder
+#
+#
+# def count_unique(lst):
+#     return len(set(lst))
+#
+#
+# def reverse_tuple(t):
+#     return tuple(reversed(t))
+#
+#
+# def longest_string(strings):
+#     return max(strings, key=len) if strings else None
+#
+#
+# def get_first_item(lst):
+#     return lst[0]
+#
+#
+# def combine_lists(a, b):
+#     return a + b
+#
+#
+# def get_last_item(lst):
+#     return lst[-1]
+# s={1,2,}
+
+#
+# # lambda in python
+# square = lambda x: x * x
+# print(square(5))  # Output: 25
+#
+# # lambda with if else
+# is_even = lambda x: 'even' if x > 0 else 'odd'
+# print(is_even(4))  # Output: even
+#
+# is_positive = lambda x: 'positive' if x > 0 else "negative" if x < 0 else "zero"
+# print(is_positive(-3))  # Output: negative
+# is_positive = lambda x: 'positive' if x > 0 else ('negative' if x < 0 else 'zero')
 
 
-def task_1():
-    for i in range(10):
-        if i == 5:
-            break
-        print(i)
+# squared numbers
+# nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# squared= list(map(lambda x: x ** 2, nums))
+# print(squared)
+#
+# ages =[13,94,16,59,21,60,5]
+# adults =list(filter(lambda x : x > 18, ages))
 
+# sozlar  =['salom','hi','ok','assalomu alaykuma']
+# sozlar.sort(key=lambda x:x[-1])
+#
+#
+#
+# print(sozlar)
 
-def task_2():
-    for i in range(20):
-        if i % 2 != 0:
-            print(i)
-        else:
-            continue
+# from functools import reduce
+# sonlar=[1,2,3,4]
+# # natija =reduce(lambda a,b: a+b,sonlar)
+# natija = reduce(lambda x, y: x if x < y else y, sonlar)
+# print(natija)
+#
 
+a = lambda x, b: x + b
+print(a(4, 5))
 
-def task_3():
-    while True:
-        a = int(input("a"))
-        if a < 0:
-            break
-        else:
-            print(a)
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even = list(filter(lambda x: x % 2 == 0, numbers))
+print(even)
 
+students = [
+    {'name': 'Alice', 'grade': 85},
+    {'name': 'Bob', 'grade': 92},
+    {'name': 'Charlie', 'grade': 78}
+]
 
-def task_4():
-    for i in range(randint(0, 100)):
-        if i == 0:
-            print(i)
-            continue
-        elif i == 99:
-            break
+students.sort(key=lambda student: student['grade'])
+print(students)
 
+square = list(map(lambda x: x ** 2, numbers))
+print(square)
 
-def task_5():
-    for i in range(100):
-        if i % 13 == 0:
-            break
-        else:
-            print(i)
+names = ['Alice', 'Bob', 'Charlie']
+extract_start_which_a = list(filter(lambda x: x.startswith('A'), names))
+print(extract_start_which_a)
 
+calculate_tax_10 = lambda x: (x * 10) / 100
+print(calculate_tax_10(10))
 
-def task_6():
-    my_list = ['salom', 'alik', 'xello', 'stop']
-    for i in my_list:
-        if i == 'stop':
-            break
-        if "x" in i:
-            continue
-        else:
-            print(i)
+list_upper = list(map(lambda x: x.upper(), names))
+print(list_upper)
 
+multiple = lambda x, y: x * y
+add = lambda x, y: x + y
+divison = lambda x, y: x / y
+substract = lambda x, y: x - y
+print(multiple(1, 2))
+print(add(1, 2))
+print(divison(1, 2))
+print(substract(1, 2))
 
-def task_7():
-    my_list = []
-    while True:
-        a = input("a")
-        if a == "exit":
-            break
-        if a:
-            my_list.append(a)
+tupls = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+sort_tuples = lambda x: sorted(x)
+print(sort_tuples(tupls))
 
+extract_greather_than_50 = list(filter(lambda x: x > 50, numbers))
+print(extract_greather_than_50)
 
-def task_8():
-    for i in range(50):
-        if i % 2 != 0:
-            print(i)
-        if i > 31:
-            break
+contains_python = lambda x: x if "Python" in x else "no contains python"
+print(contains_python("Yoo "))
 
+farhantet_to_celcius = lambda x: (x - 32) * 5 / 9
+print(farhantet_to_celcius(10))
 
-def task_9():
-    numbers = [2, 4, 6, 0, 8, 10, 0, 12, 99, 14]
-    for n in numbers:
-        if n == 0:
-            continue
-        elif n == 99:
-            break
+longest_word_in_list = list(map(lambda x: len(x), names))
+print(longest_word_in_list)
 
+filter_list_given_condition = filter(lambda x: x > 50, numbers)
+print(filter_list_given_condition)
+"""
+15. Create a lambda to reverse a string.
+16. Use lambda to count elements greater than a given number.
+17.Sort a list of tuples by the second element using lambda.
+18. Use lambda + filter() to extract words longer than 5 characters.
+19. Write a lambda to check if a number is divisible by 3 and 5.
+20. Use map() + lambda to apply a 20% discount to prices.
+21.Create a lambda to merge two strings with a hyphen (-).
+22. Use lambda to extract palindrome words.
+23.Sort a list of dictionaries by the length of a chosen key's value.
+24. Write a lambda to compute the absolute difference between two numbers.
+25. Use lambda + filter() to select numbers whose square < 100
+"""
+# task 15
 
-def task_10():
-    for i in range(1, 100):
-        if i <= 10 or i >= 30:
-            print(i)
-        if i == 50:
-            break
+reverse_string = lambda x: x[::-1]
+print(reverse_string("hello"))
 
+#task 16
+count = 0
 
-task_10()
+func = lambda x: sum(1 for i in x if i > 1)
+print(func(numbers))
+
+#task 17
+list_num = [(1,2),(3,4),(5,6)]
+list_num.sort(key=lambda item: item[1])
+print(list)
+
+#task 18
+words =['hello','world','python','programming']
+extract_longer_than_5 = list(filter(lambda x: len(x) > 5, words))
+print(extract_longer_than_5)
+#task 19
+divisible_by_3_and_5 = lambda x: x % 3 == 0 and x % 5 == 0
+print(divisible_by_3_and_5(15))
+#task 20
+prices = [10, 20, 30, 40, 50]
+discounted_prices = list(map(lambda x: x * 0.2, prices))
+print(discounted_prices)
+#task 21
+merge_string = lambda x, y: x + "-" + y
+print(merge_string("hello", "world"))
+#task 22
+palindrome_words = lambda x: x if x == x[::-1] else "no palindrome"
+print(palindrome_words("racecar"))
+#task 23
+dict_ = [{"name":"ali","age":20},{"name":"vali","age":22},{"name":"hasan","age":21}]
+dict_.sort(key=lambda item: item["age"])
+print(dict_)
+#task 24
+difference = lambda x, y: abs(x - y)
+print(difference(10, 20))
+#task 25
+square = lambda x: x ** 2
+filter_list = list(filter(lambda x: square(x) < 100, numbers))
+print(filter_list)
