@@ -1185,116 +1185,168 @@ Boshqa hamma sonlarni chop eting.
 # print(natija)
 #
 
-a = lambda x, b: x + b
-print(a(4, 5))
+# a = lambda x, b: x + b
+# print(a(4, 5))
+#
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# even = list(filter(lambda x: x % 2 == 0, numbers))
+# print(even)
+#
+# students = [
+#     {'name': 'Alice', 'grade': 85},
+#     {'name': 'Bob', 'grade': 92},
+#     {'name': 'Charlie', 'grade': 78}
+# ]
+#
+# students.sort(key=lambda student: student['grade'])
+# print(students)
+#
+# square = list(map(lambda x: x ** 2, numbers))
+# print(square)
+#
+# names = ['Alice', 'Bob', 'Charlie']
+# extract_start_which_a = list(filter(lambda x: x.startswith('A'), names))
+# print(extract_start_which_a)
+#
+# calculate_tax_10 = lambda x: (x * 10) / 100
+# print(calculate_tax_10(10))
+#
+# list_upper = list(map(lambda x: x.upper(), names))
+# print(list_upper)
+#
+# multiple = lambda x, y: x * y
+# add = lambda x, y: x + y
+# divison = lambda x, y: x / y
+# substract = lambda x, y: x - y
+# print(multiple(1, 2))
+# print(add(1, 2))
+# print(divison(1, 2))
+# print(substract(1, 2))
+#
+# tupls = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+# sort_tuples = lambda x: sorted(x)
+# print(sort_tuples(tupls))
+#
+# extract_greather_than_50 = list(filter(lambda x: x > 50, numbers))
+# print(extract_greather_than_50)
+#
+# contains_python = lambda x: x if "Python" in x else "no contains python"
+# print(contains_python("Yoo "))
+#
+# farhantet_to_celcius = lambda x: (x - 32) * 5 / 9
+# print(farhantet_to_celcius(10))
+#
+# longest_word_in_list = list(map(lambda x: len(x), names))
+# print(longest_word_in_list)
+#
+# filter_list_given_condition = filter(lambda x: x > 50, numbers)
+# print(filter_list_given_condition)
+# """
+# 15. Create a lambda to reverse a string.
+# 16. Use lambda to count elements greater than a given number.
+# 17.Sort a list of tuples by the second element using lambda.
+# 18. Use lambda + filter() to extract words longer than 5 characters.
+# 19. Write a lambda to check if a number is divisible by 3 and 5.
+# 20. Use map() + lambda to apply a 20% discount to prices.
+# 21.Create a lambda to merge two strings with a hyphen (-).
+# 22. Use lambda to extract palindrome words.
+# 23.Sort a list of dictionaries by the length of a chosen key's value.
+# 24. Write a lambda to compute the absolute difference between two numbers.
+# 25. Use lambda + filter() to select numbers whose square < 100
+# """
+# # task 15
+#
+# reverse_string = lambda x: x[::-1]
+# print(reverse_string("hello"))
+#
+# #task 16
+# count = 0
+#
+# func = lambda x: sum(1 for i in x if i > 1)
+# print(func(numbers))
+#
+# #task 17
+# list_num = [(1,2),(3,4),(5,6)]
+# list_num.sort(key=lambda item: item[1])
+# print(list)
+#
+# #task 18
+# words =['hello','world','python','programming']
+# extract_longer_than_5 = list(filter(lambda x: len(x) > 5, words))
+# print(extract_longer_than_5)
+# #task 19
+# divisible_by_3_and_5 = lambda x: x % 3 == 0 and x % 5 == 0
+# print(divisible_by_3_and_5(15))
+# #task 20
+# prices = [10, 20, 30, 40, 50]
+# discounted_prices = list(map(lambda x: x * 0.2, prices))
+# print(discounted_prices)
+# #task 21
+# merge_string = lambda x, y: x + "-" + y
+# print(merge_string("hello", "world"))
+# #task 22
+# palindrome_words = lambda x: x if x == x[::-1] else "no palindrome"
+# print(palindrome_words("racecar"))
+# #task 23
+# dict_ = [{"name":"ali","age":20},{"name":"vali","age":22},{"name":"hasan","age":21}]
+# dict_.sort(key=lambda item: item["age"])
+# print(dict_)
+# #task 24
+# difference = lambda x, y: abs(x - y)
+# print(difference(10, 20))
+# #task 25
+# square = lambda x: x ** 2
+# filter_list = list(filter(lambda x: square(x) < 100, numbers))
+# print(filter_list)
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-even = list(filter(lambda x: x % 2 == 0, numbers))
-print(even)
 
-students = [
-    {'name': 'Alice', 'grade': 85},
-    {'name': 'Bob', 'grade': 92},
-    {'name': 'Charlie', 'grade': 78}
-]
+# 1
+data = {
+    "Alisha": (1, 2, 3, 4, 5),
+    "Bourbon": (2, 4, 6, 8),
+    "Ali": (1, 3, 5, 7, 9),
+    "Davron": (10, 15, 20, 25),
+    "Salim": (2, 3, 4, 5, 6)
+}
 
-students.sort(key=lambda student: student['grade'])
-print(students)
+print("Initial details:", data)
 
-square = list(map(lambda x: x ** 2, numbers))
-print(square)
+# 2 for "a" letters by name
+selected_items = []
+for name, numbers in data.items():
+    if "a" in name.lower():
+        selected_items.append((name, numbers))
 
-names = ['Alice', 'Bob', 'Charlie']
-extract_start_which_a = list(filter(lambda x: x.startswith('A'), names))
-print(extract_start_which_a)
+print("Contains 'a' letter:", selected_items)
 
-calculate_tax_10 = lambda x: (x * 10) / 100
-print(calculate_tax_10(10))
+# 3
+even_numbers = []
+for name, numbers in selected_items:
+    for num in numbers:
+        if num % 2 == 0:
+            even_numbers.append(num)
 
-list_upper = list(map(lambda x: x.upper(), names))
-print(list_upper)
+print("All even numbers:", even_numbers)
 
-multiple = lambda x, y: x * y
-add = lambda x, y: x + y
-divison = lambda x, y: x / y
-substract = lambda x, y: x - y
-print(multiple(1, 2))
-print(add(1, 2))
-print(divison(1, 2))
-print(substract(1, 2))
+# 4
+unique_evens = []
+for num in even_numbers:
+    if num not in unique_evens:
+        unique_evens.append(num)
 
-tupls = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-sort_tuples = lambda x: sorted(x)
-print(sort_tuples(tupls))
+print("Unique even numbers:", unique_evens)
 
-extract_greather_than_50 = list(filter(lambda x: x > 50, numbers))
-print(extract_greather_than_50)
+# 5 multiply twice
+doubled = []
+for num in unique_evens:
+    doubled.append(num * 2)
 
-contains_python = lambda x: x if "Python" in x else "no contains python"
-print(contains_python("Yoo "))
+print("Multiply unique numbers twice:", doubled)
 
-farhantet_to_celcius = lambda x: (x - 32) * 5 / 9
-print(farhantet_to_celcius(10))
+# 6
+doubled.sort()
+print("Sorted values:", doubled)
 
-longest_word_in_list = list(map(lambda x: len(x), names))
-print(longest_word_in_list)
-
-filter_list_given_condition = filter(lambda x: x > 50, numbers)
-print(filter_list_given_condition)
-"""
-15. Create a lambda to reverse a string.
-16. Use lambda to count elements greater than a given number.
-17.Sort a list of tuples by the second element using lambda.
-18. Use lambda + filter() to extract words longer than 5 characters.
-19. Write a lambda to check if a number is divisible by 3 and 5.
-20. Use map() + lambda to apply a 20% discount to prices.
-21.Create a lambda to merge two strings with a hyphen (-).
-22. Use lambda to extract palindrome words.
-23.Sort a list of dictionaries by the length of a chosen key's value.
-24. Write a lambda to compute the absolute difference between two numbers.
-25. Use lambda + filter() to select numbers whose square < 100
-"""
-# task 15
-
-reverse_string = lambda x: x[::-1]
-print(reverse_string("hello"))
-
-#task 16
-count = 0
-
-func = lambda x: sum(1 for i in x if i > 1)
-print(func(numbers))
-
-#task 17
-list_num = [(1,2),(3,4),(5,6)]
-list_num.sort(key=lambda item: item[1])
-print(list)
-
-#task 18
-words =['hello','world','python','programming']
-extract_longer_than_5 = list(filter(lambda x: len(x) > 5, words))
-print(extract_longer_than_5)
-#task 19
-divisible_by_3_and_5 = lambda x: x % 3 == 0 and x % 5 == 0
-print(divisible_by_3_and_5(15))
-#task 20
-prices = [10, 20, 30, 40, 50]
-discounted_prices = list(map(lambda x: x * 0.2, prices))
-print(discounted_prices)
-#task 21
-merge_string = lambda x, y: x + "-" + y
-print(merge_string("hello", "world"))
-#task 22
-palindrome_words = lambda x: x if x == x[::-1] else "no palindrome"
-print(palindrome_words("racecar"))
-#task 23
-dict_ = [{"name":"ali","age":20},{"name":"vali","age":22},{"name":"hasan","age":21}]
-dict_.sort(key=lambda item: item["age"])
-print(dict_)
-#task 24
-difference = lambda x, y: abs(x - y)
-print(difference(10, 20))
-#task 25
-square = lambda x: x ** 2
-filter_list = list(filter(lambda x: square(x) < 100, numbers))
-print(filter_list)
+# 7
+result = tuple(doubled)
+print("Final results in tuples:", result)

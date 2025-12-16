@@ -41,3 +41,7 @@
 #         print("✔ Success on:", d.strftime("%d.%m.%Y"))
 #         print("Response:", response.json())
 #         break
+
+#
+# fruits = ['apple','banana','chery']
+# fruits.insert('orange',1)
