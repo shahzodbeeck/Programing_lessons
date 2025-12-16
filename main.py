@@ -1300,53 +1300,70 @@ Boshqa hamma sonlarni chop eting.
 # print(filter_list)
 
 
-# 1
-data = {
-    "Alisha": (1, 2, 3, 4, 5),
-    "Bourbon": (2, 4, 6, 8),
-    "Ali": (1, 3, 5, 7, 9),
-    "Davron": (10, 15, 20, 25),
-    "Salim": (2, 3, 4, 5, 6)
-}
+# # 1
+# data = {
+#     "Alisha": (1, 2, 3, 4, 5),
+#     "Bourbon": (2, 4, 6, 8),
+#     "Ali": (1, 3, 5, 7, 9),
+#     "Davron": (10, 15, 20, 25),
+#     "Salim": (2, 3, 4, 5, 6)
+# }
+#
+# print("Initial details:", data)
+#
+# # 2 for "a" letters by name
+# selected_items = []
+# for name, numbers in data.items():
+#     if "a" in name.lower():
+#         selected_items.append((name, numbers))
+#
+# print("Contains 'a' letter:", selected_items)
+#
+# # 3
+# even_numbers = []
+# for name, numbers in selected_items:
+#     for num in numbers:
+#         if num % 2 == 0:
+#             even_numbers.append(num)
+#
+# print("All even numbers:", even_numbers)
+#
+# # 4
+# unique_evens = []
+# for num in even_numbers:
+#     if num not in unique_evens:
+#         unique_evens.append(num)
+#
+# print("Unique even numbers:", unique_evens)
+#
+# # 5 multiply twice
+# doubled = []
+# for num in unique_evens:
+#     doubled.append(num * 2)
+#
+# print("Multiply unique numbers twice:", doubled)
+#
+# # 6
+# doubled.sort()
+# print("Sorted values:", doubled)
+#
+# # 7
+# result = tuple(doubled)
+# print("Final results in tuples:", result)
 
-print("Initial details:", data)
 
-# 2 for "a" letters by name
-selected_items = []
-for name, numbers in data.items():
-    if "a" in name.lower():
-        selected_items.append((name, numbers))
+# isinstance() -> it is function that we can find which type of data value.
 
-print("Contains 'a' letter:", selected_items)
+# whole number
+x = 10
+print(isinstance(x, int))  # True
 
-# 3
-even_numbers = []
-for name, numbers in selected_items:
-    for num in numbers:
-        if num % 2 == 0:
-            even_numbers.append(num)
+y = 20.5
+print(isinstance(y, float))  # True
 
-print("All even numbers:", even_numbers)
+# string
+name = "Jonibek"
+print(isinstance(name, str))
 
-# 4
-unique_evens = []
-for num in even_numbers:
-    if num not in unique_evens:
-        unique_evens.append(num)
-
-print("Unique even numbers:", unique_evens)
-
-# 5 multiply twice
-doubled = []
-for num in unique_evens:
-    doubled.append(num * 2)
-
-print("Multiply unique numbers twice:", doubled)
-
-# 6
-doubled.sort()
-print("Sorted values:", doubled)
-
-# 7
-result = tuple(doubled)
-print("Final results in tuples:", result)
+age = 25
+print(isinstance(age, str))  # False
