@@ -1355,15 +1355,15 @@ Boshqa hamma sonlarni chop eting.
 # isinstance() -> it is function that we can find which type of data value.
 
 # whole number
-x = 10
-print(isinstance(x, int))  # True
-
-y = 20.5
-print(isinstance(y, float))  # True
-
-# string
-name = "Jonibek"
-print(isinstance(name, str))
-
-age = 25
-print(isinstance(age, str))  # False
+# x = 10
+# print(isinstance(x, int))  # True
+#
+# y = 20.5
+# print(isinstance(y, float))  # True
+#
+# # string
+# name = "Jonibek"
+# print(isinstance(name, str))
+#
+# age = 25
+# print(isinstance(age, str))  # False
