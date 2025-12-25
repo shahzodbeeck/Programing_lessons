@@ -1367,3 +1367,47 @@ Boshqa hamma sonlarni chop eting.
 #
 # age = 25
 # print(isinstance(age, str))  # False
+
+
+class Car:
+    def __init__(self, color, speed):
+        self.color = color
+        self.speed = speed
+
+    def start(self):
+        print(f"The {self.color.lower()} car started!")
+
+    def stop(self):
+        print(f"The {self.color.lower()} car stopped!")
+
+
+car1 = Car("Red", 100)
+car2 = Car("Blue", 120)
+
+car1.start()
+print(car1.speed)
+
+car2.start()
+print(car2.speed)
+
+
+class Phone:
+    def __init__(self, brand, battery):
+        self.brand = brand
+        self.battery = battery
+
+    def call(self, number):
+        print(f"{self.brand} is calling: {number}")
+
+    def charge(self):
+        print(f"{self.brand} is charging!")
+
+
+phone1 = Phone("Samsung", 85)
+phone2 = Phone("iPhone", 60)
+
+phone1.call("+998901234567")
+print(phone1.battery)
+
+phone2.charge()
+print(phone2.battery)
