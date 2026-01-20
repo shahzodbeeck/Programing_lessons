@@ -1368,46 +1368,245 @@ Boshqa hamma sonlarni chop eting.
 # age = 25
 # print(isinstance(age, str))  # False
 
+#
+# class Car:
+#     def __init__(self, color, speed):
+#         self.color = color
+#         self.speed = speed
+#
+#     def start(self):
+#         print(f"The {self.color.lower()} car started!")
+#
+#     def stop(self):
+#         print(f"The {self.color.lower()} car stopped!")
+#
+#
+# car1 = Car("Red", 100)
+# car2 = Car("Blue", 120)
+#
+# car1.start()
+# print(car1.speed)
+#
+# car2.start()
+# print(car2.speed)
+#
+#
+# class Phone:
+#     def __init__(self, brand, battery):
+#         self.brand = brand
+#         self.battery = battery
+#
+#     def call(self, number):
+#         print(f"{self.brand} is calling: {number}")
+#
+#     def charge(self):
+#         print(f"{self.brand} is charging!")
+#
+#
+# phone1 = Phone("Samsung", 85)
+# phone2 = Phone("iPhone", 60)
+#
+# phone1.call("+998901234567")
+# print(phone1.battery)
+#
+# phone2.charge()
+# print(phone2.battery)
+"""Task 1: Employee Management System
+EN: Create a base class Employee with attributes name, id, and salary. Create a derived class Manager that inherits
+from Employee and adds an attribute department and a method give_raise(amount) that increases the salary. Create instances
+and demonstrate the inheritance."""
+"""
+Task 2: Vehicle Hierarchy
+EN: Create a Vehicle class with attributes brand, model, and year. Create a Car class that inherits from Vehicle and adds
+attributes num_doors and fuel_type. Implement a method display_info in both classes where the child class calls the parent's
+method using super) and adds its own information.
+Task 3: Bank Account System
+EN: Create a BankAccount class with account_number, balance, and methods deposit and withdraw). Create
+a SavingsAccountclass that inherits from BankAccount and adds an interest_rate attribute and a method add_interest that
+calculates and adds interest to the balance.
+Task 4: Student Grade System
+EN: Create a Person class with name and age attributes. Create a Student class that inherits from Person and
+adds student_id, grades (list), and methods add_grade(grade) and get_average) to calculate the average of all grades.
+"""
 
-class Car:
-    def __init__(self, color, speed):
-        self.color = color
-        self.speed = speed
+# class Employee():
+#     def __init__(self, name, id, salary):
+#         self.name = name
+#         self.id = id
+#         self.salary = salary
+# class Manager(Employee):
+#     def __init__(self, name, id, salary, department):
+#         super().__init__(name, id, salary)
+#         self.department = department
+#
+#     def give_raise(self, amount):
+#         self.salary += amount
+#         print(f"{self.name}'s salary increased by ${amount}. New salary: ${self.salary}")
+#
+# emp1 = Employee("John Doe", 1001, 50000)
+# manager1 = Manager("Jane Smith", 2001, 75000, "IT")
+#
+# print(f"Employee: {emp1.name}, ID: {emp1.id}, Salary: ${emp1.salary}")
+# print(f"Manager: {manager1.name}, ID: {manager1.id}, Salary: ${manager1.salary}, Department: {manager1.department}")
+#
+# manager1.give_raise(5000)
+#
+# class Vehicle():
+#     def __init__(self, brand, model, year):
+#         self.brand = brand
+#         self.model = model
+#         self.year = year
+#
+#     def display_info(self):
+#         print(f"{self.brand} {self.model} {self.year}")
+#
+# vehicle1 = Vehicle("Toyota", "Camry", 2022)
+# vehicle1.display_info()
+#
+# class BankAccount():
+#     def __init__(self, account_number, balance):
+#         self.account_number = account_number
+#         self.balance = balance
+#
+#     def deposit(self, amount):
+#         self.balance += amount
+#         print(f"Deposited ${amount}. New balance: ${self.balance}")
+#
+#     def withdraw(self, amount):
+#         if amount <= self.balance:
+#             self.balance -= amount
+#             print(f"Withdrew ${amount}. New balance: ${self.balance}")
+#         else:
+#             print("Insufficient funds")
+#
+#     def display_info(self):
+#         print(f"Account Number: {self.account_number}, Balance: ${self.balance}")
+# class SavingsAccounts(BankAccount):
+#     def __init__(self, account_number, balance, interest_rate):
+#         super().__init__(account_number, balance)
+#         self.interest_rate = interest_rate
+#
+#     def add_interest(self):
+#         self.balance += self.balance * self.interest_rate
+#         print(f"Interest added. New balance: ${self.balance}")
+# account2 = SavingsAccounts("987654321", 2000, 0.05)
+# account2.add_interest()
+# class Person():
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+# class Student(Person):
+#     def __init__(self, name, age, student_id):
+#         super().__init__(name, age)
+#         self.student_id = student_id
+#         super().__init__(name, age)
+#         self.student_id = student_id
+#
+# class Mahsulot:
+#     def __init__(self, nom, narx, soni):
+#         self.nom = nom
+#         self.narx = narx
+#         self.soni = soni
+#
+#     # + operator: mahsulotimizni birlashtiramiz
+#     def __add__(self, other):
+#         yangi_nom = f"{self.nom} va {other.nom}"
+#         yangi_narx = self.narx + other.narx
+#         yangi_soni = self.soni + other.soni
+#         return Mahsulot(yangi_nom, yangi_narx, yangi_soni)
+#
+#     # * multiply operator: mah. kopt.
+#     def __mul__(self, qiymat):
+#         return Mahsulot(self.nom, self.narx, self.soni * qiymat)
+#
+#     # < operator →> narx bo'yicha taqqoslash
+#     def __lt__(self, other):
+#         return self.narx < other.narx
+#
+#     # = operator →> tenglikni tekshirish
+#     def __eq__(self, other):
+#         return self.narx == other.narx and self.soni == other.soni
+#
+#     def __str__(self):
+#         return f"{self.nom} (Narx: {self.narx} so'm, Soni: {self.soni})"
+# olma = Mahsulot("Olma", 5000, 10)
+# nok = Mahsulot("Nok", 7000, 8)
+# print(f"Mahsulot 1: {olma}")
+# print(f"Mahsulot 2: {nok}")
+# print(f"Birlashtirilgan: {olma + nok}")
+# print(f"Olma x 3: {olma * 3}")
+# print(f"Olma < Nok: {olma < nok}")
+# print(f"Olma == Nok: {olma == nok}")
 
-    def start(self):
-        print(f"The {self.color.lower()} car started!")
 
-    def stop(self):
-        print(f"The {self.color.lower()} car stopped!")
+"""
+Task: BankHisob (Bank Account) class
+Create a class called BankHisob with these requirements:
+•_init_(owner, balance=0) → store owner, balance, and history=l
+•+= (iadd_) → add money, save to history as tamount ... (raise error if amount is negative)
+*= (isub_ → withdraw money, raise error if amount is negative or balance is not enough, save to history as -amount ...
+•> and >= → compare accounts by balance
+•len(account) → return number of transactions
+•account[i] → return the i-element transaction from history
+•bool(account) → True if balance > 0, otherwise False
+•_str_ → return "Owner: .., Balance: ...
+•show_history → print the history with numbering
+Test:
+Create Alish(100000) and Vohid(50000), then do: Alish += 50000, Vohid -= 30000, Vali += 20000, and print results.
 
+"""
+class BankHisob:
+    def __init__(self, owner, balance=0):
+        self.owner = owner
+        self.balance = balance
+        self.history = []
 
-car1 = Car("Red", 100)
-car2 = Car("Blue", 120)
+    def __iadd__(self, amount):
+        if amount < 0:
+            raise ValueError("Amount cannot be negative")
+        self.balance += amount
+        self.history.append(f"+{amount}")
+        return self
 
-car1.start()
-print(car1.speed)
+    def __isub__(self, amount):
+        if amount < 0:
+            raise ValueError("Amount cannot be negative")
+        if self.balance < amount:
+            raise ValueError("Insufficient funds")
+        self.balance -= amount
+        self.history.append(f"-{amount}")
+        return self
 
-car2.start()
-print(car2.speed)
+    def __gt__(self, other):
+        return self.balance > other.balance
 
+    def __ge__(self, other):
+        return self.balance >= other.balance
 
-class Phone:
-    def __init__(self, brand, battery):
-        self.brand = brand
-        self.battery = battery
+    def __len__(self):
+        return len(self.history)
 
-    def call(self, number):
-        print(f"{self.brand} is calling: {number}")
+    def __getitem__(self, i):
+        return self.history[i]
 
-    def charge(self):
-        print(f"{self.brand} is charging!")
+    def __bool__(self):
+        return self.balance > 0
 
+    def __str__(self):
+        return f"Owner: {self.owner}, Balance: {self.balance}"
 
-phone1 = Phone("Samsung", 85)
-phone2 = Phone("iPhone", 60)
+    def show_history(self):
+        for i, transaction in enumerate(self.history):
+            print(f"{i+1}. {transaction}")
 
-phone1.call("+998901234567")
-print(phone1.battery)
-
-phone2.charge()
-print(phone2.battery)
+Alish = BankHisob("Alish", 100000)
+Vohid = BankHisob("Vohid", 50000)
+Alish += 50000
+Vohid -= 30000
+Vali = BankHisob("Vali", 20000)
+print(Alish)
+print(Vohid)
+print(Vali)
+Alish.show_history()
+Vohid.show_history()
+Vali.show_history()
